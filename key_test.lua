@@ -20,7 +20,7 @@ local Window = WindUI:CreateWindow({
         end,
     },
     KeySystem = { -- <- ↓ remove this all, if you dont neet the key system
-        Key = { "1234", "5678" },
+        Key = { "1234" },
         Note = "Example Key System.",
         Thumbnail = {
             Image = "rbxassetid://",
