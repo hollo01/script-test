@@ -1,38 +1,16 @@
 local WindUI = loadstring(game:HttpGet("https://github.com/Footagesus/WindUI/releases/latest/download/main.lua"))()
 
--- Test
+--theme
+WindUI:SetTheme("Violet")
 
-
-
--- Set theme:
-WindUI:SetTheme("Indigo")
-
---- EXAMPLE !!!
-
-function gradient(text, startColor, endColor)
-    local result = ""
-    local length = #text
-
-    for i = 1, length do
-        local t = (i - 1) / math.max(length - 1, 1)
-        local r = math.floor((startColor.R + (endColor.R - startColor.R) * t) * 255)
-        local g = math.floor((startColor.G + (endColor.G - startColor.G) * t) * 255)
-        local b = math.floor((startColor.B + (endColor.B - startColor.B) * t) * 255)
-
-        local char = text:sub(i, i)
-        result = result .. "<font color=\"rgb(" .. r ..", " .. g .. ", " .. b .. ")\">" .. char .. "</font>"
-    end
-
-    return result
-end
-
+--popup
 local Confirmed = false
 
 WindUI:Popup({
-    Title = "Welcome! Popup Example",
+    Title = "Disclaimer !",
     Icon = "rbxassetid://129260712070622",
     IconThemed = true,
-    Content = "This is an Example UI for the " .. gradient("WindUI", Color3.fromHex("#00FF87"), Color3.fromHex("#60EFFF")) .. " Lib",
+    Content = "I'm not responsible for roblox account bans or anything else. " .. gradient("WindUI", Color3.fromHex("#00FF87"), Color3.fromHex("#60EFFF")) .. " Lib",
     Buttons = {
         {
             Title = "Cancel",
