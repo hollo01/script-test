@@ -1,8 +1,5 @@
 local WindUI = loadstring(game:HttpGet("https://github.com/Footagesus/WindUI/releases/latest/download/main.lua"))()
 
---theme
-WindUI:SetTheme("Violet")
-
 --popup
 local Confirmed = false
 
