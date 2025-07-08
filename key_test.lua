@@ -5,7 +5,7 @@ local WindUI = loadstring(game:HttpGet("https://github.com/Footagesus/WindUI/rel
 
 
 -- Set theme:
-WindUI:SetTheme("Light")
+WindUI:SetTheme("Indigo")
 
 --- EXAMPLE !!!
 
